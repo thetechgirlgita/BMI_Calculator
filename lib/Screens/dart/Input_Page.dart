@@ -38,6 +38,8 @@ class _Input_PageState extends State<Input_Page> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
+                Column(
+                  children:[
                 Container(
                   width: 150,
                   height: 190,
@@ -83,7 +85,20 @@ class _Input_PageState extends State<Input_Page> {
                     ),
                   ),
                   ),),
+                    Padding(
+                        padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
+                      child: Text("( Meters )",
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: accentHexColor,
+                        )
+                      ),
+                    )
+                  ]),
 
+
+                Column(
+                  children: [
                 Container(
                   width: 150,
                   height: 190,
@@ -127,11 +142,20 @@ class _Input_PageState extends State<Input_Page> {
                             color: Colors.white.withOpacity(.8)),
                       ),
                     ),
-
                   ),
                 ),
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
+                      child: Text("( Kg )",
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: accentHexColor,
+                          )
+                      ),
+                    )],),
               ],
             ),
+
 
 
             SizedBox(
